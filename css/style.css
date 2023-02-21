@@ -65,6 +65,16 @@ ul, li{
     padding:35px 0 0 35px;
 
 }
+.event-heading{
+    font-family: var(--ff2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.5px;
+    color: var(--first-cl);
+    text-transform: capitalize;
+    
+
+}
 .center{
     text-align: center;
 }
@@ -105,6 +115,9 @@ ul, li{
 /* spaching */
 .py-14{
     padding: 14px;
+}
+.pt-35{
+    padding-top: 35px;
 }
 .details-spacing{
     padding: 0 14px 14px 14px;
@@ -158,3 +171,16 @@ ul, li{
     background: #000;
 }
 
+/* event */
+.event-item h1{
+    position: relative;
+}
+.event-item h1::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../images/leep.png) no-repeat;
+}
