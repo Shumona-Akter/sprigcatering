@@ -273,3 +273,59 @@ nab ebebeebe==========
 .h-300px{
     height: 200px;
 }
+
+/* contact part */
+.contact-heading{
+    font-family: var(--ff2);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--first-cl);
+    padding-top: 52px;
+    text-transform: uppercase;
+   
+}
+
+.contact-para{
+    font-family: var(--ff1);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--first-cl);
+}
+.fs-14px{
+    font-size: 14px;
+}
+form input{
+    width: 100%;
+    background: #ACC3BD;
+    padding: 10px;
+    border: 1px solid var(--first-cl);
+    outline: none;
+    color: #fff;
+    margin-top: 16px;
+}
+.width-75px{
+    width: 75px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    
+    outline: none;
+    color: #353535;
+    margin-top: 16px;
+}
+
+.btn-submit{
+    display: inline-block;
+    padding: 14px 83px;
+    background: var(--primary-cl);
+    color: var(--white-cl);
+    font-family: var(--ff2);
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 13px 0;
+    transition: all linear 0.3s;
+    outline: none;
+    border: 1px solid transparent;
+}
