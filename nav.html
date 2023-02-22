@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1024px;
+      display: block;
+      margin: 30px auto;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav__item {
+      padding: 1rem;
+    }
+
+    .nav__link {
+      display: block;
+      padding: .3125rem 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .nav__link.active  {
+      border: 1px solid #ff4b4c;
+      color: #ff4b4c;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+         <ul class="nav">
+           <li class="nav__item"><a class="nav__link active" href="#">Home</a></li>
+           <li class="nav__item"><a class="nav__link" href="#">Item 1</a></li>
+           <li class="nav__item"><a class="nav__link" href="#">Item 2</a></li>
+           <li class="nav__item"><a class="nav__link" href="#">Item 3</a></li>
+           <li class="nav__item"><a class="nav__link" href="#">Item 4</a></li>
+           <li class="nav__item"><a class="nav__link" href="#">Item 5</a></li>
+         </ul>
+        </nav>
+       </div>
+    
+
+       <script>
+         document.addEventListener('DOMContentLoaded', function() {
+
+const selector = '.nav__link';
+const elems = Array.from(document.querySelectorAll(selector));
+const navigation = document.querySelector('nav');
+
+function makeActive(evt) {
+  const target = evt.target;
+
+   if (!target || !target.matches(selector)) {
+     return;
+   }
+
+  elems.forEach(elem => elem.classList.remove('active'));
+  evt.target.classList.add('active');
+};
+
+navigation.addEventListener('mousedown', makeActive);
+
+});
+       </script>
+</body>
+</html>

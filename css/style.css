@@ -153,7 +153,7 @@ ul, li{
     display: flex;
     justify-content: space-around;
 }
-.menu-items ul li a{
+.menu-items ul li .active-menu{
     font-family: var(--ff2);
     font-weight: 400;
     font-size: 16px;
@@ -161,7 +161,7 @@ ul, li{
     padding: 14px 5px ;
     position: relative;
 }
-.menu-items ul li a::before{
+.menu-items   .active-menu::before{
     content: ' ';
     position: absolute;
     bottom: 0;
@@ -169,8 +169,44 @@ ul, li{
     width: 30px;
     height: 30px;
     background: #000;
+    visibility: hidden;
 }
+ 
+/* 
+nab ebebeebe==========
+*/
 
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary-cl);
+  }
+
+  .nav__item {
+    padding: 1rem;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 14px 24px;
+    text-transform: capitalize;
+    font-family: var(--ff2);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white-cl);
+    transition: all linear;
+  }
+  .nav__link:hover {
+    color: var(--white-cl);
+  }
+
+  .nav__link.active  {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+/*  */
 /* event */
 .event-item h1{
     position: relative;
@@ -183,4 +219,7 @@ ul, li{
     width: 30px;
     height: 30px;
     background: url(../images/leep.png) no-repeat;
+}
+.h-300px{
+    height: 200px;
 }
