@@ -50,3 +50,12 @@ $('.center-div').slick({
         navigation.addEventListener('mousedown', makeActive);
   
       });
+
+      // submit btn
+// document.getElementById('submit-btn').addEventListener("click", function (){
+//   const nameField = document.getElementById("name-field");
+//   const nameFieldValue = nameField.value;
+  
+  
+//   // console.log(nameFieldValue);
+// })      

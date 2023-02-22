@@ -98,7 +98,7 @@ ul, li{
     content: " ";
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 60px;
     padding: 10px;
     background: url(../images/leep.png) no-repeat center ;
     
@@ -185,33 +185,8 @@ ul, li{
     height: 100%;
 }
 /* nav ber */
-.menu-items{
-    padding: 10px 0;
-    background: var(--primary-cl);
-}
-.menu-items ul{
-    display: flex;
-    justify-content: space-around;
-}
-.menu-items ul li .active-menu{
-    font-family: var(--ff2);
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--white-cl);
-    padding: 14px 5px ;
-    position: relative;
-}
-.menu-items   .active-menu::before{
-    content: ' ';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background: #000;
-    visibility: hidden;
-}
- 
+
+
 /* 
 nab ebebeebe==========
 */
@@ -294,7 +269,7 @@ nab ebebeebe==========
 .fs-14px{
     font-size: 14px;
 }
-form input{
+ input{
     width: 100%;
     background: #ACC3BD;
     padding: 10px;
