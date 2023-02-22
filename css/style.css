@@ -69,12 +69,52 @@ ul, li{
     font-family: var(--ff2);
     font-size: 16px;
     font-weight: 400;
-    line-height: 30.5px;
+    padding-bottom: 30px;
     color: var(--first-cl);
     text-transform: capitalize;
-    
-
+    position: relative;
 }
+.event-heading:hover{
+    color: var(--first-cl);
+}
+
+.item .active-corporate  {
+    position: relative;
+  }
+  .item .active-corporate::after  {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 78px;
+    padding: 10px;
+    background: url(../images/leep.png) no-repeat center ;
+    
+  }
+  
+  .item .active-social  {
+    position: relative;
+  }
+  .item .active-social::after  {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding: 10px;
+    background: url(../images/leep.png) no-repeat center ;
+    
+  }
+  .item .active-wedding   {
+    position: relative;
+  }
+  .item .active-wedding::after  {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 70px;
+    padding: 10px;
+    background: url(../images/leep.png) no-repeat center ;
+    
+  }
 .center{
     text-align: center;
 }
@@ -203,9 +243,20 @@ nab ebebeebe==========
   }
 
   .nav__link.active  {
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    position: relative;
   }
+  .nav__link.active::after  {
+    content: " ";
+    position: absolute;
+    bottom: -27px;
+    left: 40%;
+    width: 15px;
+    height: 15px;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    background: var(--primary-cl);
+  }
+
 /*  */
 /* event */
 .event-item h1{
@@ -215,9 +266,8 @@ nab ebebeebe==========
     content: " ";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
+    left: -24px;
+    padding: 15px;
     background: url(../images/leep.png) no-repeat;
 }
 .h-300px{
